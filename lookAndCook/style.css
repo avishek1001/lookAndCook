@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 214, 183);
+    
+}
+
+nav {
+    display: flex;
+    margin: 1em 1em;
+    background-color: greenyellow;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 3em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    display: flex;
+    margin: 0 0;
+    padding-left: 2.4em;
+    width: 30%;
+    justify-content: flex-start;
+}
+
+nav form {
+    display: flex;
+    margin: 0 0;
+    width: 70%;
+    padding-right: 2.4em;
+    justify-content: space-evenly;
+}
+
+nav form input {
+    width: 70%;
+}
+
+nav form button {
+    width: 20%;
+}
+
+#midSection {
+    display: flex;
+    margin: 1em 1em;
+    justify-content: space-between;
+}
+
+#midSection #imgDiv {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40%;
+    
+}
+
+#midSection #imgDiv img{
+    width: 80%;
+    height: 80%;
+    border-radius: 1em;
+}
+
+#midSection #ingDiv {
+    background-color: rgb(223, 244, 65);
+    width: 55%;
+    padding: 2em;
+}
+
+#midSection #ingDiv ul {
+    padding: 0;
+    list-style:none;
+    width: 80%;
+    height: 80%;
+}
+
+#lastSection {
+    background-color: pink;
+    margin: 0 1em;
+    padding: 0 1em;
+}
+
+#lastSection p {
+    margin: 1em 0;
+    padding: 2.4em 2.4em;
+}
+
+@media (max-width: 852px){
+
+    body {
+        margin: 0 0;
+        
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    nav {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        height: 4em;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav h1 {
+        justify-content: center;
+        padding: 0;
+    }
+
+    #midSection {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0 0;
+        
+    }
+
+    #midSection #imgDiv {
+        height: 10em;
+    }
+
+}
